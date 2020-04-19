@@ -9,7 +9,9 @@ public class Testing {
 	
 	@Test
 	public void abc() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\ManojPadhan\\Downloads\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		String current = System.getProperty("user.dir")+"\\"+"chromedriver.exe";
+		System.out.println(current);
+		System.setProperty("webdriver.chrome.driver",current);
     	WebDriver driver = new ChromeDriver();
     	driver.get("https://google.com");
 	}
