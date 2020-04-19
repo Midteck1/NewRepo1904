@@ -9,7 +9,7 @@ public class Testing {
 	
 	@Test
 	public void abc() {
-		String current = System.getProperty("user.dir")+"\\"+"chromedriver.exe";
+		String current = System.getProperty("user.dir")+"/"+"chromedriver.exe";
 		System.out.println(current);
 		System.setProperty("webdriver.chrome.driver",current);
     	WebDriver driver = new ChromeDriver();
